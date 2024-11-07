@@ -1,0 +1,61 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["relationJoins", "fullTextSearch"]
+}
+
+datasource db {
+  provider     = "postgresql"
+  url          = env("DATABASE_URL")
+  relationMode = "foreignKeys"
+}
+
+generator zod {
+  provider              = "zod-prisma"
+  output                = "./zod" // The directory where generated zod schemas will be saved
+  relationModel         = true // Create and export both plain and related models.
+  modelCase             = "camelCase" // Output models using camel case (ex. userModel, postModel)
+  modelSuffix           = "Schema" // Suffix to apply to your prisma models when naming Zod schemas
+  useDecimalJs          = true // Represent the prisma Decimal type using Decimal.js (as Prisma does)
+  // https://www.prisma.io/docs/concepts/components/prisma-client/working-with-fields/working-with-json-fields#filtering-by-null-values
+  prismaJsonNullability = true // Uses prisma's scheme for JSON field nullability
+}
+
+model users {
+  id            Int       @id @unique(map: "users_id_unique") @default(autoincrement())
+  publicId      String    @unique @default(dbgenerated("public_id()"))
+  name          String
+  email         String?   @unique
+  emailVerified DateTime? @db.Timestamptz(6)
+  phone         String?   @unique
+  phoneVerified DateTime? @db.Timestamptz(6)
+  image         String?
+  createdAt     DateTime  @default(now()) @db.Timestamp(6)
+  updatedAt     DateTime  @default(now()) @db.Timestamp(6)
+}
+
+model sessions {
+  id        String   @id
+  userId    String
+  expiresAt DateTime
+  ipAddress String?
+  userAgent String?
+}
+
+model accounts {
+  id           String    @id
+  accountId    String
+  providerId   String
+  userId       String
+  accessToken  String?
+  refreshToken String?
+  idToken      String?
+  expiresAt    DateTime?
+  password     String?
+}
+
+model verifications {
+  id         String   @id
+  identifier String
+  value      String
+  expiresAt  DateTime
+}

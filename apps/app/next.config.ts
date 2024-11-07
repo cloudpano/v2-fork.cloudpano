@@ -1,15 +1,18 @@
-import { env } from '@repo/env';
-import { config, withAnalyzer, withSentry } from '@repo/next-config';
-import type { NextConfig } from 'next';
+import { env } from '@repo/env'
+import { config, withAnalyzer, withSentry } from '@repo/next-config'
+import type { NextConfig } from 'next'
 
-let nextConfig: NextConfig = { ...config };
+let nextConfig: NextConfig = {
+	...config,
+	webpack: (config, { isServer }) => {
+		if (isServer) config.ignoreWarnings = [{ module: /opentelemetry/ }]
 
-if (env.VERCEL) {
-  nextConfig = withSentry(nextConfig);
+		return config
+	},
 }
 
-if (env.ANALYZE === 'true') {
-  nextConfig = withAnalyzer(nextConfig);
-}
+if (env.VERCEL) nextConfig = withSentry(nextConfig)
 
-export default nextConfig;
+if (env.ANALYZE === 'true') nextConfig = withAnalyzer(nextConfig)
+
+export default nextConfig

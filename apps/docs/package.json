@@ -2,8 +2,13 @@
   "name": "docs",
   "private": true,
   "scripts": {
+    "clean": "git clean -xdf .cache .next .turbo dist node_modules",
+    "check": "biome check --write",
+    "format": "biome format --write",
+    "lint": "biome lint --write && mintlify broken-links",
+    "lint:unsafe": "biome lint --write --unsafe",
     "dev": "mintlify dev --port 3004",
-    "lint": "mintlify broken-links"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "typescript": "^5.6.3"

@@ -1,20 +1,25 @@
 {
   "name": "next-forge",
-  "version": "2.11.7",
-  "bin": {
-    "next-forge": "./index.js"
-  },
-  "files": [
-    "index.js"
-  ],
+  "version": "2.0.0-alpha.0",
+  "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "test": "turbo test",
+    "infisical:login": "infisical login",
+    "infisical:user": "infisical user switch",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo run clean",
+    "check": "turbo run check --continue",
+    "format": "turbo run format --continue",
+    "lint": "turbo run lint --continue",
+    "lint:unsafe": "turbo run lint:unsafe --continue",
     "analyze": "turbo analyze",
-    "bump-deps": "npx npm-check-updates --deep -u -x react-day-picker && pnpm install",
-    "migrate": "cd packages/database && npx prisma format && npx prisma generate && npx prisma db push"
+    "build": "turbo run build",
+    "dev": "turbo watch dev",
+    "test": "turbo run test",
+    "bump-deps": "pnpm dlx npm-check-updates --deep -u -x react-day-picker && bun install",
+    "migrate": "cd packages/database && pnpm dlx prisma format && pnpm dlx prisma generate && pnpm dlx prisma db push",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "postinstall": "pnpm run lint:ws",
+    "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
     "@auto-it/all-contributors": "^11.3.0",
@@ -26,7 +31,7 @@
     "ultracite": "^4.1.6"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20.18.0"
   },
   "packageManager": "pnpm@9.12.3"
 }

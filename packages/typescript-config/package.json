@@ -6,6 +6,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "clean": "git clean -xdf node_modules",
+    "typecheck": "tsc --noEmit"
+  },
   "devDependencies": {
     "eslint": "9",
     "jest": "^29.7.0",

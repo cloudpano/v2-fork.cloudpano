@@ -2,22 +2,51 @@
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["**/.env.*local"],
   "tasks": {
-    "build": {
-      "dependsOn": ["^build", "test"],
-      "outputs": [".next/**", "!.next/cache/**"]
-    },
-    "test": {
-      "dependsOn": ["^test"]
-    },
-    "lint": {
-      "dependsOn": ["^lint"]
-    },
     "analyze": {
       "dependsOn": ["^analyze"]
+    },
+    "check": {
+      "cache": false,
+      "dependsOn": ["^check"]
+    },
+    "clean": {
+      "cache": false,
+      "dependsOn": ["^clean"]
+    },
+    "//#clean": {
+      "cache": false
+    },
+    "format": {
+      "cache": false,
+      "dependsOn": ["^format"]
+    },
+    "lint": {
+      "cache": false,
+      "dependsOn": ["^lint"]
+    },
+    "lint:unsafe": {
+      "cache": false,
+      "dependsOn": ["^lint:unsafe"]
+    },
+    "build": {
+      "dependsOn": ["^build", "test"],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        ".cache/tsbuildinfo.json",
+        "dist/**"
+      ]
     },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "test": {
+      "dependsOn": ["^test"]
+    },
+    "typecheck": {
+      "dependsOn": ["^build"],
+      "outputs": [".cache/tsbuildinfo.json"]
     }
   },
   "globalEnv": [
@@ -28,7 +57,6 @@
     "CLERK_WEBHOOK_SECRET",
     "STRIPE_WEBHOOK_SECRET",
     "BETTERSTACK_API_KEY",
-    "BETTERSTACK_URL",
-    "ARCJET_KEY"
+    "BETTERSTACK_URL"
   ]
 }
