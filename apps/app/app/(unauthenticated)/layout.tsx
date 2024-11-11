@@ -1,60 +1,49 @@
+'use client'
+
 import { ModeToggle } from '@repo/design-system/components/mode-toggle'
-import { env } from '@repo/env'
-import { CommandIcon } from 'lucide-react'
 import Link from 'next/link'
 import type { ReactNode } from 'react'
+import {Button} from "@repo/design-system/components/ui/button";
+import CloudPanoLogo from "@repo/design-system/components/branding/cloudpano-logo";
+import {Card} from "@repo/design-system/components/ui/card";
+import {usePathname} from "next/navigation";
+import authBgDesktopSrc from "@repo/design-system/components/branding/auth-background-desktop.svg"
 
-const AuthLayout = ({ children }: { children: ReactNode }) => (
-	<div className='container relative grid h-dvh flex-col items-center justify-center lg:max-w-none lg:grid-cols-2 lg:px-0'>
-		<div className='relative hidden h-full flex-col bg-muted p-10 text-white lg:flex dark:border-r'>
-			<div className='absolute inset-0 bg-zinc-900' />
-			<div className='relative z-20 flex items-center font-medium text-lg'>
-				<CommandIcon className='mr-2 h-6 w-6' />
-				Acme Inc
-			</div>
-			<div className='absolute top-4 right-4'>
-				<ModeToggle />
-			</div>
-			<div className='relative z-20 mt-auto'>
-				<blockquote className='space-y-2'>
-					<p className='text-lg'>
-						&ldquo;This library has saved me countless hours of work
-						and helped me deliver stunning designs to my clients
-						faster than ever before.&rdquo;
-					</p>
-					<footer className='text-sm'>Sofia Davis</footer>
-				</blockquote>
-			</div>
-		</div>
-		<div className='lg:p-8'>
-			<div className='mx-auto flex w-full max-w-[400px] flex-col justify-center space-y-6'>
-				{children}
-				<p className='px-8 text-center text-muted-foreground text-sm'>
-					By clicking continue, you agree to our{' '}
-					<Link
-						href={new URL(
-							'/legal/terms',
-							env.NEXT_PUBLIC_WEB_URL,
-						).toString()}
-						className='underline underline-offset-4 hover:text-primary'
-					>
-						Terms of Service
-					</Link>{' '}
-					and{' '}
-					<Link
-						href={new URL(
-							'/legal/privacy',
-							env.NEXT_PUBLIC_WEB_URL,
-						).toString()}
-						className='underline underline-offset-4 hover:text-primary'
-					>
-						Privacy Policy
-					</Link>
-					.
-				</p>
-			</div>
-		</div>
-	</div>
-)
 
+
+const AuthLayout = ({ children }: { children: ReactNode }) => {
+	const pathname = usePathname()
+	const isLoginPage = pathname === '/sign-in'
+
+	return (
+		<div
+			className="h-dvh w-dvw relative overflow-auto bg-no-repeat
+    bg-[width:100%_auto] lg:bg-[length:100%_auto]  md:bg-center-top"
+			style={{
+				backgroundImage: `url(${authBgDesktopSrc.src})`,
+			}}
+		>
+				<nav className="flex justify-between items-center py-8 mx-5 lg:mx-14 overflow-hidden">
+					<CloudPanoLogo className='text-white'/>
+					<Button asChild variant='outline' className='text-white text-lg font-normal p-7'>
+						<Link href={isLoginPage ? '/sign-up' : '/sign-in'}>
+							{isLoginPage ? 'Sign Up' : 'Login'}
+						</Link>
+					</Button>
+					<div className='absolute bottom-4 right-4'>
+						<ModeToggle />
+					</div>
+				</nav>
+
+				<div className='md:container relative  flex-col items-center justify-center lg:max-w-none px-4 lg:px-0'>
+					<div className='lg:p-8 lg:pt-0 flex flex-col items-center justify-center'>
+						<Card className='w-full lg:w-1/2 xl:1/3 p-5 lg:p-12 flex justify-center items-center'>
+							{children}
+						</Card>
+					</div>
+				</div>
+			</div>
+
+		)
+	}
 export default AuthLayout
