@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fcd668e6-9970-4050-8caf-da26591b6792" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/.infisical.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nvmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/src/prisma/client.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/src/prisma/migrations/20241020000000_id_functions/nano-id.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/src/prisma/migrations/20241020000000_id_functions/public-id.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/src/prisma/migrations/migration_lock.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/src/prisma/schema.prisma" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/src/prisma/zod/accounts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/src/prisma/zod/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/src/prisma/zod/sessions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/src/prisma/zod/users.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/src/prisma/zod/verifications.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/supabase/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/supabase/config.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/database/supabase/seed.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/app/cron/keep-alive/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/app/cron/keep-alive/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/app/global-error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/app/global-error.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/app/health/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/app/health/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/app/webhooks/clerk/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/app/webhooks/clerk/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/app/webhooks/stripe/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/app/webhooks/stripe/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/app/(authenticated)/components/posthog-identifier.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/app/(authenticated)/components/posthog-identifier.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/app/(authenticated)/components/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/app/(authenticated)/components/sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/app/(authenticated)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/app/(authenticated)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/app/(authenticated)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/app/(authenticated)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/app/(unauthenticated)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/app/(unauthenticated)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/app/(unauthenticated)/sign-in/[[...sign-in]]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/app/(unauthenticated)/sign-in/[[...sign-in]]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/app/(unauthenticated)/sign-up/[[...sign-up]]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/app/(unauthenticated)/sign-up/[[...sign-up]]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/app/.well-known/vercel/flags/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/app/.well-known/vercel/flags/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/app/global-error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/app/global-error.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/instrumentation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/instrumentation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/lib/arcjet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/lib/arcjet.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/sentry.client.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/sentry.client.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/app/vitest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/app/vitest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/docs/api-reference/openapi.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/docs/api-reference/openapi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/docs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/docs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/email/emails/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/email/emails/contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/email/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/email/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/studio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/studio/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/(home)/components/cases.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/(home)/components/cases.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/(home)/components/cta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/(home)/components/cta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/(home)/components/faq.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/(home)/components/faq.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/(home)/components/features.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/(home)/components/features.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/(home)/components/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/(home)/components/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/(home)/components/stats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/(home)/components/stats.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/(home)/components/testimonials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/(home)/components/testimonials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/(home)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/(home)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/blog/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/blog/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/blog/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/blog/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/components/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/components/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/components/header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/components/header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/contact/actions/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/contact/actions/contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/contact/components/contact-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/contact/components/contact-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/global-error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/global-error.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/legal/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/legal/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/pricing/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/pricing/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/robots.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/robots.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/app/sitemap.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/app/sitemap.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/components/mdx.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/components/mdx.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/components/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/components/sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biome.json" beforeDir="false" afterPath="$PROJECT_DIR$/biome.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/analytics.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/authentication.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/blog.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bundle-analysis.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/cron.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dark-mode.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/database/drizzle.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/database/overview.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/database/planetscale.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/database/prisma-postgres.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/deploying.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/email.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/env.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/faq.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/flags.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/formatting.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/logo-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/logo-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/opengraph-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/sign-in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/vercel-toolbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/mint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/observability/debugging.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/observability/error-capture.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/observability/logging.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/observability/uptime.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overview.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/payments.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/security.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/seo/json-ld.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/seo/metadata.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/seo/sitemap.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/setup.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/snippets/authors.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/structure/apps.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/structure/packages.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/testing.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/database/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/database/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/database/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/database/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/database/prisma/schema.prisma" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/design-system/components/mode-toggle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/design-system/components/mode-toggle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/design-system/hooks/use-mobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/design-system/hooks/use-mobile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/design-system/hooks/use-toast.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/design-system/hooks/use-toast.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/design-system/lib/fonts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/design-system/lib/fonts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/design-system/lib/metadata.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/design-system/lib/metadata.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/design-system/lib/stripe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/design-system/lib/stripe.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/design-system/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/design-system/lib/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/design-system/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/design-system/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/design-system/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/design-system/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/design-system/providers/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/design-system/providers/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/design-system/providers/theme.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/design-system/providers/theme.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/email-templates/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/email-templates/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/email-templates/src/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/email-templates/src/contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/env/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/env/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/env/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/env/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/feature-flags/access.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/feature-flags/access.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/feature-flags/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/feature-flags/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/feature-flags/lib/create-flag.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/feature-flags/lib/create-flag.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/feature-flags/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/feature-flags/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/next-config/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/next-config/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/next-config/instrumentation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/next-config/instrumentation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/next-config/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/next-config/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/observability/error.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/observability/error.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/observability/log.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/observability/log.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/observability/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/observability/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/observability/status/get.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/observability/status/get.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/observability/status/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/observability/status/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/observability/status/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/observability/status/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/tailwind-config/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/tailwind-config/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/tailwind-config/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/tailwind-config/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/tailwind-config/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/tailwind-config/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/tailwind-config/typography.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/tailwind-config/typography.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typescript-config/nextjs.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typescript-config/nextjs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typescript-config/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typescript-config/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/typescript-config/react-library.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/typescript-config/react-library.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/setup.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/setup.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/apps/api.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/apps/app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/apps/docs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/apps/email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/apps/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/apps/studio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/apps/web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/attribution.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/cta.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/arcjet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/better-stack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/clerk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/cmdk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/content-collections.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/fumadocs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/google-analytics.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/lucide.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/neon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/posthog.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/prisma.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/radix.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/react-email.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/recharts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/resend.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/sentry.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/stripe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/svix.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/tailwind.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/typescript.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/ultracite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/features/zod.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/hero/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/hero/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/hero/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/hero/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/hero/repo-info.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/hero/turborepo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/hero/x.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/installer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/components/social.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/opengraph-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/pnpm-lock.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/pnpm-workspace.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/tailwind.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/splash/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo.json" beforeDir="false" afterPath="$PROJECT_DIR$/turbo.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Matt Campbell &lt;matt@cloudpano.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mrmattrc&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:cloudpano/v2.cloudpano.git&quot;,
+    &quot;accountId&quot;: &quot;17f5647f-d40f-4341-960c-647b7053d579&quot;
+  }
+}</component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupnpm">
+      <scroll-view-position x="0" y="0" />
+      <selected-paths>
+        <path>
+          <id value="$PROJECT_DIR$/package.json" />
+          <id value="format" />
+        </path>
+      </selected-paths>
+    </layout>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2odnPe14XdvlCl02Q9u85WbzmKl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mattcampbell/Sites/CloudPano/v2.cloudpano/packages&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;npm.app &gt; dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.clean:workspaces.executor&quot;: &quot;Run&quot;,
+    &quot;npm.database &gt; build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.database &gt; prisma:generate.executor&quot;: &quot;Run&quot;,
+    &quot;npm.database &gt; prisma:push.executor&quot;: &quot;Run&quot;,
+    &quot;npm.docs &gt; dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.format.executor&quot;: &quot;Run&quot;,
+    &quot;npm.typecheck.executor&quot;: &quot;Run&quot;,
+    &quot;npm.typescript-config &gt; typecheck.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mattcampbell/Sites/CloudPano/v2.cloudpano/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages" />
+      <recent name="$PROJECT_DIR$/packages/database" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/app/types" />
+      <recent name="$PROJECT_DIR$/packages/typings/lib" />
+      <recent name="$PROJECT_DIR$/packages/typescript-config" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/packages/typescript-config/typings" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.app &gt; dev">
+    <configuration name="app &gt; dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/apps/app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="clean:workspaces" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="clean:workspaces" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="database &gt; prisma:push" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/database/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prisma:push" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="typecheck" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="typecheck" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.app &gt; dev" />
+        <item itemvalue="npm.format" />
+        <item itemvalue="npm.clean:workspaces" />
+        <item itemvalue="npm.typecheck" />
+        <item itemvalue="npm.database &gt; prisma:push" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fcd668e6-9970-4050-8caf-da26591b6792" name="Changes" comment="" />
+      <created>1731208298348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731208298348</updated>
+      <workItem from="1731208299037" duration="26825000" />
+      <workItem from="1731348295719" duration="24000" />
+      <workItem from="1731348325022" duration="2806000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1731296568282</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731296568282</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1731299917578</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731299917578</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1731352831624</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731352831624</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1731352918541</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731352918541</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+</project>

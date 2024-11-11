@@ -1,0 +1,26 @@
+{
+  "name": "@repo/feature-flags",
+  "version": "2.0.0-alpha.0",
+  "private": true,
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "check": "biome check --write ./lib",
+    "format": "biome format --write ./lib",
+    "lint": "biome lint --write ./lib",
+    "lint:unsafe": "biome lint --write --unsafe ./lib",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^6.3.0",
+    "@repo/analytics": "workspace:*",
+    "@repo/design-system": "workspace:*",
+    "@vercel/flags": "^2.6.3"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "next": "^15.0.3"
+  }
+}

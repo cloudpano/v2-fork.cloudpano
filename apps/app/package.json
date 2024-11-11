@@ -1,0 +1,46 @@
+{
+  "name": "app",
+  "private": true,
+  "scripts": {
+    "clean": "git clean -xdf .cache .next .turbo dist node_modules",
+    "check": "biome check --write ./app",
+    "format": "biome format --write ./app",
+    "lint": "biome lint --write ./app",
+    "lint:unsafe": "biome lint --write --unsafe ./app",
+    "dev": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- next dev -p 3000 --experimental-https",
+    "build": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- next build",
+    "start": "next start",
+    "analyze": "ANALYZE=true pnpm build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@arcjet/next": "1.0.0-alpha.28",
+    "@clerk/nextjs": "^6.3.0",
+    "@repo/analytics": "workspace:*",
+    "@repo/database": "workspace:*",
+    "@repo/design-system": "workspace:*",
+    "@repo/env": "workspace:*",
+    "@repo/feature-flags": "workspace:*",
+    "@repo/next-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*",
+    "@sentry/nextjs": "^8.37.1",
+    "lucide-react": "^0.456.0",
+    "next": "^15.0.3",
+    "next-themes": "^0.4.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}

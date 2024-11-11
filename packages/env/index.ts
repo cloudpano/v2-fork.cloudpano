@@ -1,0 +1,86 @@
+import { createEnv } from '@t3-oss/env-nextjs'
+import { z } from 'zod'
+
+const server: Parameters<typeof createEnv>[0]['server'] = {
+	ANALYZE: z.string().optional(),
+	ARCJET_KEY: z.string().min(1).startsWith('ajkey_'),
+	BETTERSTACK_API_KEY: z.string().min(1),
+	BETTERSTACK_URL: z.string().min(1).url(),
+	CLERK_SECRET_KEY: z.string().min(1).startsWith('sk_'),
+	CLERK_WEBHOOK_SECRET: z.string().min(1).startsWith('whsec_'),
+	DATABASE_URL: z.string().min(1).url(),
+	RESEND_AUDIENCE_ID: z.string().min(1),
+	RESEND_FROM: z.string().min(1).email(),
+	RESEND_TOKEN: z.string().min(1).startsWith('re_'),
+	STRIPE_SECRET_KEY: z.string().min(1).startsWith('sk_'),
+	STRIPE_WEBHOOK_SECRET: z.string().min(1).startsWith('whsec_'),
+
+	// Added by Sentry Integration, Vercel Marketplace
+	SENTRY_ORG: z.string().min(1).optional(),
+	SENTRY_PROJECT: z.string().min(1).optional(),
+
+	// Added by Vercel
+	FLAGS_SECRET: z.string().min(1),
+	NEXT_RUNTIME: z.enum(['nodejs', 'edge']).optional(),
+	VERCEL: z.string().optional(),
+}
+
+const client: Parameters<typeof createEnv>[0]['client'] = {
+	NEXT_PUBLIC_APP_URL: z.string().min(1).url(),
+	NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL: z.string().min(1).startsWith('/'),
+	NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL: z.string().min(1).startsWith('/'),
+	NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string().min(1).startsWith('pk_'),
+	NEXT_PUBLIC_CLERK_SIGN_IN_URL: z.string().min(1).startsWith('/'),
+	NEXT_PUBLIC_CLERK_SIGN_UP_URL: z.string().min(1).startsWith('/'),
+	NEXT_PUBLIC_DOCS_URL: z.string().min(1).url(),
+	NEXT_PUBLIC_GA_MEASUREMENT_ID: z.string().min(1).startsWith('G-'),
+	NEXT_PUBLIC_POSTHOG_HOST: z.string().min(1).url(),
+	NEXT_PUBLIC_POSTHOG_KEY: z.string().min(1).startsWith('phc_'),
+	NEXT_PUBLIC_WEB_URL: z.string().min(1).url(),
+
+	// Added by Vercel
+	NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL: z.string().min(1).url(),
+}
+
+export const env = createEnv({
+	client,
+	server,
+	runtimeEnv: {
+		ANALYZE: process.env.ANALYZE,
+		ARCJET_KEY: process.env.ARCJET_KEY,
+		BETTERSTACK_API_KEY: process.env.BETTERSTACK_API_KEY,
+		BETTERSTACK_URL: process.env.BETTERSTACK_URL,
+		CLERK_SECRET_KEY: process.env.CLERK_SECRET_KEY,
+		CLERK_WEBHOOK_SECRET: process.env.CLERK_WEBHOOK_SECRET,
+		DATABASE_URL: process.env.DATABASE_URL,
+		FLAGS_SECRET: process.env.FLAGS_SECRET,
+		NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
+		NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL:
+			process.env.NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL,
+		NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL:
+			process.env.NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL,
+		NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY:
+			process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,
+		NEXT_PUBLIC_CLERK_SIGN_IN_URL:
+			process.env.NEXT_PUBLIC_CLERK_SIGN_IN_URL,
+		NEXT_PUBLIC_CLERK_SIGN_UP_URL:
+			process.env.NEXT_PUBLIC_CLERK_SIGN_UP_URL,
+		NEXT_PUBLIC_DOCS_URL: process.env.NEXT_PUBLIC_DOCS_URL,
+		NEXT_PUBLIC_GA_MEASUREMENT_ID:
+			process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
+		NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_POSTHOG_HOST,
+		NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
+		NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL:
+			process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL,
+		NEXT_PUBLIC_WEB_URL: process.env.NEXT_PUBLIC_WEB_URL,
+		NEXT_RUNTIME: process.env.NEXT_RUNTIME,
+		RESEND_AUDIENCE_ID: process.env.RESEND_AUDIENCE_ID,
+		RESEND_FROM: process.env.RESEND_FROM,
+		RESEND_TOKEN: process.env.RESEND_TOKEN,
+		SENTRY_ORG: process.env.SENTRY_ORG,
+		SENTRY_PROJECT: process.env.SENTRY_PROJECT,
+		STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
+		STRIPE_WEBHOOK_SECRET: process.env.STRIPE_WEBHOOK_SECRET,
+		VERCEL: process.env.VERCEL,
+	},
+})

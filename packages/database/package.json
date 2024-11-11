@@ -1,0 +1,55 @@
+{
+  "name": "@repo/database",
+  "version": "2.0.0-alpha.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "module": "src/index.ts",
+  "scripts": {
+    "check": "biome check --write",
+    "format": "biome format --write",
+    "lint": "biome lint --write",
+    "build": "prisma generate --no-hints",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "dev": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- tsc",
+    "supabase:link": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- pnpm dlx supabase link",
+    "supabase:list": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- pnpm dlx supabase migration list",
+    "supabase:start": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- pnpm dlx supabase start",
+    "supabase:stop": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- pnpm dlx supabase stop",
+    "supabase:diff": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- pnpm dlx supabase db diff --use-migra",
+    "supabase:commit": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- pnpm dlx supabase db remote commit",
+    "supabase:push": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- pnpm dlx supabase db push",
+    "supabase:reset": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- pnpm dlx supabase db reset",
+    "supabase:migration": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- pnpm dlx supabase migration new",
+    "supabase:status": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- pnpm dlx supabase status",
+    "prisma:generate": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- prisma generate && pnpm run format",
+    "prisma:migrate": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- prisma migrate dev --name init",
+    "prisma:pull": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- prisma db pull",
+    "prisma:push": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- prisma db push",
+    "prisma:studio": "infisical run --projectId=9f73acd5-d571-4b43-9454-4c426d0fb35c --env=dev --path=/app -- prisma studio",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.3",
+    "@prisma/adapter-neon": "^5.22.0",
+    "@prisma/client": "5.22.0",
+    "@repo/env": "workspace:*",
+    "postgres": "^3.4.5",
+    "server-only": "^0.0.1",
+    "undici": "^6.20.1",
+    "ws": "^8.18.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.9.0",
+    "@types/ws": "^8.5.13",
+    "bufferutil": "^4.0.8",
+    "prisma": "^5.22.0",
+    "typescript": "^5.6.3",
+    "zod-prisma": "^0.5.4"
+  },
+  "prisma": {
+    "schema": "src/prisma/schema.prisma"
+  }
+}

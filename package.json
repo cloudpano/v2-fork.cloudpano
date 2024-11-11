@@ -1,0 +1,37 @@
+{
+  "name": "next-forge",
+  "version": "2.0.0-alpha.0",
+  "private": true,
+  "scripts": {
+    "infisical:login": "infisical login",
+    "infisical:user": "infisical user switch",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo run clean",
+    "check": "turbo run check --continue",
+    "format": "turbo run format --continue",
+    "lint": "turbo run lint --continue",
+    "lint:unsafe": "turbo run lint:unsafe --continue",
+    "analyze": "turbo analyze",
+    "build": "turbo run build",
+    "dev": "turbo watch dev",
+    "test": "turbo run test",
+    "bump-deps": "pnpm dlx npm-check-updates --deep -u -x react-day-picker && pnpm install",
+    "migrate": "cd packages/database && pnpm dlx prisma format && pnpm dlx prisma generate && pnpm dlx prisma db push",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "postinstall": "pnpm run lint:ws",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "@auto-it/all-contributors": "^11.3.0",
+    "@auto-it/first-time-contributor": "^11.3.0",
+    "@biomejs/biome": "1.9.4",
+    "@repo/typescript-config": "workspace:*",
+    "turbo": "^2.2.3",
+    "typescript": "^5.6.3",
+    "ultracite": "^4.1.6"
+  },
+  "engines": {
+    "node": ">=20.18.0"
+  },
+  "packageManager": "pnpm@9.12.3"
+}
